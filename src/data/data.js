@@ -40,8 +40,6 @@ export const CARDS = [
       wordPair: "Low - High",
       img: "<https://7esl.com/wp-content/uploads/2018/03/Low-High-310x310.png>",
     },
-  ],
-  [
     {
       id: 9,
       wordPair: "Poor - Wealthy",
@@ -124,8 +122,6 @@ export const CARDS = [
       wordPair: "Careful - Careless",
       img: "<https://7esl.com/wp-content/uploads/2018/03/careful-carelessness-310x310.png>",
     },
-  ],
-  [
     {
       id: 25,
       wordPair: "Pessimistic - Optimistic",
