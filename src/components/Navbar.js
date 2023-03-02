@@ -16,7 +16,7 @@ export default function Navbar({
         Get points by clicking on an image but don't click on any image more
         than once!
       </p>
-      <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700"></hr>
       <div className="flex text-sm gap-2">
         <DropDown
           currentGame={currentGame}
