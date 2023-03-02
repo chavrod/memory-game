@@ -1,6 +1,5 @@
 import React from "react";
 import DropDown from "./DropDown";
-import Score from "./Score";
 
 export default function Navbar({ currentGame, handleGameChange, gameSet }) {
   return (
@@ -15,7 +14,7 @@ export default function Navbar({ currentGame, handleGameChange, gameSet }) {
         Get points by clicking on an image but don't click on any image more
         than once!
       </p>
-      <Score />
+      <div>Current score: 0 Best score in this game: 0</div>
     </nav>
   );
 }
