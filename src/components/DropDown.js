@@ -11,6 +11,7 @@ export default function DropDown({ currentGame, handleGameChange, gameSet }) {
           {gameSet.map((game) => (
             <li key={game}>
               <button
+                onClick={() => handleGameChange(game)}
                 className={`hover:bg-gray-200 ${
                   game === currentGame ? "bg-green-100" : ""
                 }`}
