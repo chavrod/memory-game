@@ -2,6 +2,7 @@ import "./index.css";
 
 import Navbar from "./components/Navbar";
 import CardGrid from "./components/CardGrid";
+import Modal from "./components/Modal";
 import { CARDS } from "./data/data.js";
 
 import { useState } from "react";
@@ -21,7 +22,6 @@ function App() {
     } else {
       setScore((n) => n + 1);
     }
-    console.log(selectedCardIds);
   };
 
   const handleGameChange = (game) => {
@@ -42,11 +42,15 @@ function App() {
         score={score}
         bestScore={bestScore}
       />
-      <CardGrid
-        currentGame={currentGame}
-        cards={CARDS}
-        handleCardSelection={handleCardSelection}
-      />
+      {score < CARDS[currentGame].length ? (
+        <CardGrid
+          currentGame={currentGame}
+          cards={CARDS}
+          handleCardSelection={handleCardSelection}
+        />
+      ) : (
+        <Modal handleGameChange={handleGameChange} />
+      )}
     </div>
   );
 }
