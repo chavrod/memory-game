@@ -13,7 +13,7 @@ export default function CardGrid({ cards, currentGame, handleCardSelection }) {
   const shuffledCards = shuffle(cards[currentGame]);
 
   return (
-    <div>
+    <div className="flex flex-row flex-wrap justify-center gap-6">
       {shuffledCards.map((card) => (
         <Card
           key={card.id}

@@ -34,13 +34,14 @@ function App() {
   const gameSet = [0, 1];
 
   return (
-    <div>
+    <div className="min-h-screen bg-emerald-200 font-mono">
       <Navbar
         currentGame={currentGame}
         handleGameChange={handleGameChange}
         gameSet={gameSet}
         score={score}
         bestScore={bestScore}
+        cards={CARDS}
       />
       {score < CARDS[currentGame].length ? (
         <CardGrid
